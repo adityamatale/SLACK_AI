@@ -1,0 +1,11 @@
+# Python cache
+__pycache__/
+*.pyc
+
+# Environment files
+.env
+
+# IDE files
+.api/ai_response.txt
+.api/slack_users.json
+.api/system_prompt.txt
