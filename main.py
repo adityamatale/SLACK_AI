@@ -1,9 +1,11 @@
 from langchain_core.prompts import PromptTemplate
-from system_prompt import sys_prompt
+from SLLACK.system_prompt import sys_prompt
 from slack_sdk import WebClient
 from dotenv import load_dotenv
 from langchain_openai import ChatOpenAI
 import json, os
+
+print("Loaded main.py")
 
 
 # ---------------- CONFIG ----------------

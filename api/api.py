@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from endpoints import msg_service
+from SLLACK.api.endpoints import msg_service, registration_service, user_profile_service
 
 app = FastAPI(
     title="Message Service API",
@@ -8,6 +8,8 @@ app = FastAPI(
 
 # Include feedback routes
 app.include_router(msg_service.router, tags=["Feedback"])
+app.include_router(registration_service.router, tags=["User Registration"])
+app.include_router(user_profile_service.router, tags=["User Profile"])
 
 
 if __name__ == "__main__":

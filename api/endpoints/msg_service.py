@@ -1,17 +1,9 @@
-from pathlib import Path
-import sys
-original_sys_path = sys.path.copy()
-# Two directories above
-two_up = Path(__file__).resolve().parents[2]
-print(two_up)
-sys.path.append(str(two_up))
-
-from main import get_ai_suggestions, get_user_id
-sys.path = original_sys_path
+from SLLACK.main import get_ai_suggestions, get_user_id
 from fastapi import APIRouter, Request
 from slack_sdk import WebClient
 from dotenv import load_dotenv
 import json, os
+from SLLACK.api.logger import logger
 
 # config
 load_dotenv()

@@ -6,6 +6,7 @@ __pycache__/
 .env
 
 # IDE files
-.api/ai_response.txt
-.api/slack_users.json
-.api/system_prompt.txt
+api/ai_response.txt
+api/slack_users.json
+api/system_prompt.txt
+api/logs/api.log
